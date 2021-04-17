@@ -1,6 +1,8 @@
 ---
+
 title : A Page for everyone
 layout : base.njk
+
 ---
 
 <div class="container">
@@ -8,7 +10,7 @@ layout : base.njk
     <h3 class="vibe">Good boy</h3>
     <div class="love">❤️</div>
     <ul>
-        {% for article in news.articles %}
+        {% for article in news[0].articles %}
             <li>
                 <a href={{article.url}} targer="_blank">
                     <h2>{{article.title}}</h2>

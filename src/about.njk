@@ -7,3 +7,8 @@ layout : base.njk
       <h1>{{title}}</h1>
       <p>It was made for you using HTML,CSS and Javascript. And served as a Jamstack site</p>
 </div>
+
+{% for item in news %}
+      <a href="/{{item.country}}">{{item.country}}</a>
+
+{% endfor %}
