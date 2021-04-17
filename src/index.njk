@@ -7,5 +7,10 @@ layout : base.njk
     <h1>{{title}}</h1>
     <h3 class="vibe">Good boy</h3>
     <div class="love">❤️</div>
+    <ul>
+        {% for article in news.articles %}
+            <li>{{article.title}}</li>
+        {% endfor %}
+    </ul>
 </div>
 <script src="./js/App.js"></script>
